@@ -3,7 +3,7 @@ const router = new Router();
 const conn = require('D:/Proyecto BBDD2/proyecto-BBDD2/src/Config/DatabaseConfig');
 
 router.get('/', (req, res) => {
-    const sql = 'SELECT * FROM Usuarios';
+    const sql = 'SELECT id_user FROM Usuarios';
 
     conn.query(sql, (error, results) => {
     if (error) throw error;
